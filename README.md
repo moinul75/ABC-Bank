@@ -46,7 +46,7 @@ env\Scripts\activate
 
 # LIVE LINK : 
 <pre>
- (link)https://abc.pythonanywhere.com/
+<a href="https://abc.pythonanywhere.com/">(link)https://abc.pythonanywhere.com/</a>
 </pre>
 
 # SOME SNAPSHOT OF THIS PROJECTS 
