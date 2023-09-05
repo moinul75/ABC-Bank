@@ -49,17 +49,8 @@ env\Scripts\activate
 <a href="https://abc.pythonanywhere.com/">(link)https://abc.pythonanywhere.com/</a>
 </pre>
 
-# SOME SNAPSHOT OF THIS PROJECTS 
-<pre>
-![image](https://github.com/moinul75/ABC-Bank/assets/102654562/0bb0ab82-41df-44f9-b323-cfb0ae743904)
-![image](https://github.com/moinul75/ABC-Bank/assets/102654562/f596980a-44ed-4d23-956b-73ead274a392)
-![image](https://github.com/moinul75/ABC-Bank/assets/102654562/17600b76-dd29-4c75-a991-ff02687495b0)
-![image](https://github.com/moinul75/ABC-Bank/assets/102654562/d00336c5-014a-4ca1-9f98-1e186eabe320)
- </pre>
 
-
-
-
+# Live Video of What I made
 
  https://github.com/moinul75/ABC-Bank/assets/102654562/fea860f1-e9cd-44e8-b7e2-f448dff899cc
 
