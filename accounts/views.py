@@ -8,7 +8,7 @@ from .forms import UserRegistrationForm, UserAddressForm
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.views import PasswordChangeDoneView
 from .forms import CustomPasswordChangeForm
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 
 User = get_user_model()
@@ -76,15 +76,22 @@ class LogoutView(RedirectView):
         return super().get_redirect_url(*args, **kwargs)
     
 #password change 
-def password_changed(request):
-    return render(request,'accounts/user_password_change.html')
 
 class CustomPasswordChangeView(PasswordChangeView):
     form_class = CustomPasswordChangeForm  # Use your custom form class
     template_name = 'accounts/user_password_change.html'  # Specify the template for rendering the view
-    success_url = '/password_change/done/'  # Specify the URL to redirect to after a successful password change
+
+    def form_valid(self, form):
+        # Log the user out from all sessions before changing the password
+        logout(self.request)
+
+        # Proceed with the password change
+        super().form_valid(form)
+
+        # Return a redirect response to a different URL
+        return HttpResponseRedirect(reverse_lazy('accounts:password_change_done'))
     
 
 
 class CustomPasswordChangeDoneView(PasswordChangeDoneView):
-    template_name = 'your_password_change_done_template.html'  # Specify the template for the password change done page
+    template_name = 'accounts/password_change_done_template.html'  # Specify the template for the password change done page

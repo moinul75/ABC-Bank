@@ -47,7 +47,7 @@ class UserBankAccount(models.Model):
     account_type = models.ForeignKey(BankAccountType , related_name='accounts' , on_delete=models.CASCADE)
     account_no = models.PositiveIntegerField(unique=True)
     gender = models.CharField(max_length=1 , choices = GENDER_CHOICE)
-    profile_picture = models.ImageField(upload_to='profile_image',null=True,blank=True)
+    profile_picture = models.ImageField(upload_to='profile_image',blank=True,default='profile_image/default-profile.png')
     brith_date = models.DateField(null=True , blank=True)
     balance = models.DecimalField(default=0 , max_digits=10 , decimal_places= 2)
     initial_deposit_date = models.DateField(null=True, blank=True)
