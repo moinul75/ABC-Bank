@@ -54,5 +54,11 @@ env\Scripts\activate
 
  https://github.com/moinul75/ABC-Bank/assets/102654562/fea860f1-e9cd-44e8-b7e2-f448dff899cc
 
+ ## Projects Snapshot 
+![image](https://github.com/moinul75/ABC-Bank/assets/102654562/8815f129-2911-42d9-bdaf-8d59f4b65268)
+
+
+
+
 
 
